@@ -1,5 +1,7 @@
 package com.example.springaop;
 
+import com.example.springaop.decorator.AlarmGreetingMachineDecorator;
+import com.example.springaop.decorator.DancingGreetingMachineDecorator;
 import com.example.springaop.proxy.GreetingMachineProxy;
 
 public class Store {
@@ -16,7 +18,17 @@ public class Store {
     }
 
     private void greeting(User user) {
-        IGreetingMachine greetingMachine = new GreetingMachineProxy();
+//        프록시 패턴을 사용
+//        IGreetingMachine greetingMachine = new GreetingMachineProxy();
+//        greetingMachine.greet(user);
+
+//        데코레이터 패턴을 사용
+        IGreetingMachine greetingMachine =
+            new DancingGreetingMachineDecorator(
+                new AlarmGreetingMachineDecorator(
+                    new GreetingMachine()
+                )
+            );
         greetingMachine.greet(user);
     }
 }
