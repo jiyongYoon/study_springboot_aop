@@ -25,8 +25,12 @@ public class User {
         return "hello";
     }
 
-    public void visitTo(Store store) {
+    public void visitTo(Market market) {
         // store에 user 방문을 알림
-        store.visitedBy(this);
+        market.visitedBy(this);
+    }
+
+    public void visitTo(Library library) {
+        library.visitedBy(this);
     }
 }
