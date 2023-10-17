@@ -1,4 +1,4 @@
-package com.example.springaop.aop;
+package com.example.springaop.zerobase.aop;
 
 public @interface AlarmGreetingMachine {
 

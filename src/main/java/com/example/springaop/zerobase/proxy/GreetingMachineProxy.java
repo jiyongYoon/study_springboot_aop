@@ -1,8 +1,8 @@
-package com.example.springaop.proxy;
+package com.example.springaop.zerobase.proxy;
 
-import com.example.springaop.GreetingMachine;
-import com.example.springaop.IGreetingMachine;
-import com.example.springaop.User;
+import com.example.springaop.zerobase.GreetingMachine;
+import com.example.springaop.zerobase.IGreetingMachine;
+import com.example.springaop.zerobase.User;
 
 public class GreetingMachineProxy implements IGreetingMachine {
     private GreetingMachine greetingMachine;

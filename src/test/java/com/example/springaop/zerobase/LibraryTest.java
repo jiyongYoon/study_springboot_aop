@@ -1,9 +1,9 @@
-package com.example.springaop;
+package com.example.springaop.zerobase;
 
 import static org.assertj.core.api.Assertions.*;
-import static org.junit.jupiter.api.Assertions.*;
 
-import org.assertj.core.api.Assertions;
+import com.example.springaop.zerobase.Library;
+import com.example.springaop.zerobase.User;
 import org.junit.jupiter.api.Test;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.boot.test.context.SpringBootTest;

@@ -1,6 +1,6 @@
-package com.example.springaop;
+package com.example.springaop.zerobase;
 
-import com.example.springaop.aop.AlarmGreetingMachine;
+import com.example.springaop.zerobase.aop.AlarmGreetingMachine;
 import org.springframework.stereotype.Component;
 
 @Component

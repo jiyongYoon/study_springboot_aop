@@ -1,10 +1,8 @@
-package com.example.springaop.aop;
+package com.example.springaop.zerobase.aop;
 
 
-import com.example.springaop.Library;
-import com.example.springaop.Market;
-import com.example.springaop.Store;
-import com.example.springaop.User;
+import com.example.springaop.zerobase.Store;
+import com.example.springaop.zerobase.User;
 import org.aspectj.lang.JoinPoint;
 import org.aspectj.lang.annotation.Aspect;
 import org.aspectj.lang.annotation.Before;
@@ -14,7 +12,7 @@ import org.springframework.stereotype.Component;
 @Component // Bean에 등록되어야 함
 public class AlarmGreetingMachineAspect {
 
-    @Before(value = "@annotation(AlarmGreetingMachine)") // 해당 어노테이션이 붙은 메서드가 Target이 된다.
+    @Before(value = "@annotation(com.example.springaop.zerobase.aop.AlarmGreetingMachine)") // 해당 어노테이션이 붙은 메서드가 Target이 된다.
     public void alarm(JoinPoint joinPoint) {
         Store target = (Store) joinPoint.getTarget();
 

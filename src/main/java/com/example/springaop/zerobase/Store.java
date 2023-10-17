@@ -1,4 +1,4 @@
-package com.example.springaop;
+package com.example.springaop.zerobase;
 
 public abstract class Store {
 

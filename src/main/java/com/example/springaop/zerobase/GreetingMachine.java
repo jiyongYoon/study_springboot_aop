@@ -1,7 +1,4 @@
-package com.example.springaop;
-
-import com.example.springaop.IGreetingMachine;
-import com.example.springaop.User;
+package com.example.springaop.zerobase;
 
 // Real Object
 public class GreetingMachine implements IGreetingMachine {
