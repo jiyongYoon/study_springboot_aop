@@ -11,7 +11,7 @@ import org.springframework.context.annotation.Import;
 @Slf4j
 //@Import(TraceAspect.class)
 @Import({TraceAspect.class, RetryAspect.class})
-@SpringBootTest
+@SpringBootTest("spring.main.allow-circular-references=true")
 public class ExamTest {
 
     @Autowired
